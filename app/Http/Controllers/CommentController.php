@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
-    public function store(Idea $idea) {
+    public function store(Idea $idea)
+    {
 
         $comment = new Comment();
         $comment->idea_id = $idea->id;
